@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================================================
+   AURUS AI — Design Tokens
+   Tema escuro (padrão) inspirado no dashboard "Visão Geral"
+   Tema claro inspirado no dashboard "Perfil do Paciente"
+   ========================================================= */
+
+:root,
+.dark {
+  --color-background: #0b1220;
+  --color-surface: #101a2e;
+  --color-surface-hover: #16223b;
+  --color-sidebar: #0d1526;
+  --color-sidebar-text: #b8c4dc;
+  --color-primary: #2f8bff;
+  --color-secondary: #1c63d6;
+  --color-accent: #38bdf8;
+  --color-border: #1e2a44;
+  --color-text: #eef2fb;
+  --color-text-secondary: #8b98b8;
+  --color-success: #34d399;
+  --color-danger: #f87171;
+  --color-warning: #fbbf24;
+
+  --gradient-primary: linear-gradient(135deg, #2563eb 0%, #38bdf8 100%);
+  --gradient-icon: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  --gradient-sidebar: linear-gradient(180deg, #0d1526 0%, #0a101f 100%);
+
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px -8px rgba(0, 0, 0, 0.45);
+  --shadow-card-hover: 0 4px 10px rgba(0, 0, 0, 0.45), 0 16px 32px -12px rgba(0, 0, 0, 0.55);
+
+  color-scheme: dark;
+}
+
+.light {
+  --color-background: #eef3fb;
+  --color-surface: #ffffff;
+  --color-surface-hover: #f3f7fd;
+  --color-sidebar: #1a54d6;
+  --color-sidebar-text: #d7e4fb;
+  --color-primary: #2563eb;
+  --color-secondary: #1d4ed8;
+  --color-accent: #3b82f6;
+  --color-border: #e2e8f5;
+  --color-text: #101827;
+  --color-text-secondary: #6b7690;
+  --color-success: #10b981;
+  --color-danger: #ef4444;
+  --color-warning: #f59e0b;
+
+  --gradient-primary: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+  --gradient-icon: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  --gradient-sidebar: linear-gradient(180deg, #1e5aeb 0%, #123a9c 100%);
+
+  --shadow-card: 0 1px 2px rgba(16, 24, 39, 0.04), 0 6px 20px -6px rgba(16, 24, 39, 0.08);
+  --shadow-card-hover: 0 4px 10px rgba(16, 24, 39, 0.06), 0 14px 28px -10px rgba(16, 24, 39, 0.12);
+
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.35s ease, color 0.35s ease;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-secondary);
+}
+
+/* Recharts default text color follows theme */
+.recharts-text {
+  fill: var(--color-text-secondary);
+}
+.recharts-cartesian-axis-line,
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  stroke: var(--color-border);
+}
+.recharts-tooltip-wrapper {
+  outline: none;
+}
+
+/* Focus visibility for accessibility */
+a:focus-visible,
+button:focus-visible,
+select:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

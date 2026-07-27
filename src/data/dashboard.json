@@ -1,0 +1,253 @@
+{
+  "app": {
+    "name": "AURUS AI",
+    "tagline": "HEALTH INTELLIGENCE",
+    "lastUpdated": "22/07/2025 20:30"
+  },
+  "admin": {
+    "name": "Administrador",
+    "role": "Aurus AI",
+    "initials": "AD"
+  },
+  "overview": {
+    "stats": [
+      {
+        "id": "total-patients",
+        "label": "Total de Pacientes",
+        "value": "1248",
+        "icon": "users",
+        "delta": "100% da base",
+        "deltaDirection": "neutral"
+      },
+      {
+        "id": "avg-heart-rate",
+        "label": "Frequência Cardíaca Média",
+        "value": "79",
+        "unit": "bpm",
+        "icon": "heart",
+        "delta": "-2,4 vs último período",
+        "deltaDirection": "down",
+        "sparkline": [58, 62, 60, 68, 66, 74, 79]
+      },
+      {
+        "id": "avg-health-index",
+        "label": "Índice de Saúde Médio",
+        "value": "75,6",
+        "icon": "shield",
+        "delta": "+4,8 vs último período",
+        "deltaDirection": "up",
+        "sparkline": [60, 64, 63, 69, 71, 73, 75.6]
+      },
+      {
+        "id": "avg-anxiety",
+        "label": "Nível de Ansiedade Médio",
+        "value": "5,2",
+        "icon": "brain",
+        "delta": "-0,6 vs último período",
+        "deltaDirection": "down",
+        "sparkline": [6.2, 6.0, 5.8, 6.1, 5.6, 5.4, 5.2]
+      },
+      {
+        "id": "avg-sleepiness",
+        "label": "Nível de Sonolência Média",
+        "value": "4,8",
+        "icon": "moon",
+        "delta": "+0,3 vs último período",
+        "deltaDirection": "up",
+        "sparkline": [4.2, 4.3, 4.5, 4.4, 4.6, 4.7, 4.8]
+      },
+      {
+        "id": "top-medication",
+        "label": "Medicamento Mais Utilizado",
+        "value": "Cafeína",
+        "icon": "pill",
+        "delta": "74% dos pacientes",
+        "deltaDirection": "neutral",
+        "sparkline": [30, 40, 45, 55, 60, 68, 74]
+      }
+    ],
+    "medicationUsage": [
+      { "label": "Cafeína", "value": 74 },
+      { "label": "Ibuprofeno", "value": 48 },
+      { "label": "Creatina", "value": 35 },
+      { "label": "Álcool", "value": 29 },
+      { "label": "Nicotina", "value": 22 },
+      { "label": "Omeprazol", "value": 18 },
+      { "label": "Dipirona", "value": 17 },
+      { "label": "Loratadina", "value": 15 },
+      { "label": "Melatonina", "value": 12 },
+      { "label": "Metformina", "value": 9 }
+    ],
+    "ageDistribution": [
+      { "label": "18-25", "value": 162 },
+      { "label": "26-35", "value": 312 },
+      { "label": "36-45", "value": 318 },
+      { "label": "46-60", "value": 308 },
+      { "label": "60+", "value": 148 }
+    ],
+    "heartRateHistogram": [
+      { "label": "40-50", "value": 18 },
+      { "label": "50-60", "value": 92 },
+      { "label": "60-70", "value": 248 },
+      { "label": "70-80", "value": 372 },
+      { "label": "80-90", "value": 262 },
+      { "label": "90-100", "value": 178 },
+      { "label": "100-110", "value": 118 },
+      { "label": "110-120", "value": 46 },
+      { "label": "120-130", "value": 22 },
+      { "label": "130+", "value": 6 }
+    ],
+    "healthIndexHistogram": [
+      { "label": "0-20", "value": 8 },
+      { "label": "20-40", "value": 64 },
+      { "label": "40-60", "value": 214 },
+      { "label": "60-80", "value": 356 },
+      { "label": "80-100", "value": 268 },
+      { "label": "100-120", "value": 172 },
+      { "label": "120-140", "value": 86 },
+      { "label": "140-160", "value": 42 },
+      { "label": "160-180", "value": 16 },
+      { "label": "180+", "value": 4 }
+    ],
+    "correlation": {
+      "xAxisLabel": "Nível de Sonolência",
+      "yAxisLabel": "Nível de Ansiedade",
+      "xAxisOptions": ["Sonolência", "Frequência Cardíaca", "Idade"],
+      "yAxisOptions": ["Ansiedade", "Índice de Saúde", "Frequência Cardíaca"],
+      "coefficient": 0.62,
+      "coefficientLabel": "Correlação positiva moderada",
+      "points": [
+        { "x": 0.5, "y": 1.8 }, { "x": 1.1, "y": 2.4 }, { "x": 1.4, "y": 1.6 },
+        { "x": 1.8, "y": 3.1 }, { "x": 2.0, "y": 2.6 }, { "x": 2.2, "y": 3.6 },
+        { "x": 2.5, "y": 2.9 }, { "x": 2.7, "y": 3.8 }, { "x": 2.9, "y": 4.2 },
+        { "x": 3.1, "y": 3.4 }, { "x": 3.3, "y": 4.6 }, { "x": 3.4, "y": 3.9 },
+        { "x": 3.6, "y": 5.0 }, { "x": 3.8, "y": 4.3 }, { "x": 4.0, "y": 5.4 },
+        { "x": 4.1, "y": 4.7 }, { "x": 4.3, "y": 5.8 }, { "x": 4.5, "y": 5.0 },
+        { "x": 4.6, "y": 6.1 }, { "x": 4.8, "y": 5.5 }, { "x": 5.0, "y": 6.4 },
+        { "x": 5.1, "y": 5.8 }, { "x": 5.3, "y": 6.7 }, { "x": 5.4, "y": 6.0 },
+        { "x": 5.6, "y": 7.0 }, { "x": 5.8, "y": 6.3 }, { "x": 6.0, "y": 7.3 },
+        { "x": 6.1, "y": 6.6 }, { "x": 6.3, "y": 7.6 }, { "x": 6.4, "y": 6.9 },
+        { "x": 6.6, "y": 7.9 }, { "x": 6.8, "y": 7.1 }, { "x": 7.0, "y": 8.1 },
+        { "x": 7.1, "y": 7.4 }, { "x": 7.3, "y": 8.4 }, { "x": 7.5, "y": 7.7 },
+        { "x": 7.6, "y": 8.6 }, { "x": 7.8, "y": 8.0 }, { "x": 8.0, "y": 8.9 },
+        { "x": 8.2, "y": 8.2 }, { "x": 8.4, "y": 9.1 }, { "x": 8.6, "y": 8.5 },
+        { "x": 8.8, "y": 9.3 }, { "x": 9.0, "y": 8.7 }, { "x": 9.2, "y": 9.5 },
+        { "x": 9.4, "y": 9.0 }, { "x": 9.6, "y": 9.6 }, { "x": 9.8, "y": 9.2 },
+        { "x": 6.5, "y": 5.9 }, { "x": 5.5, "y": 5.2 }, { "x": 4.4, "y": 4.0 },
+        { "x": 3.5, "y": 3.2 }, { "x": 2.6, "y": 2.1 }, { "x": 7.2, "y": 6.8 },
+        { "x": 6.2, "y": 6.5 }, { "x": 5.9, "y": 5.4 }, { "x": 4.9, "y": 4.5 },
+        { "x": 8.1, "y": 7.5 }, { "x": 7.9, "y": 7.2 }, { "x": 3.0, "y": 2.5 }
+      ]
+    },
+    "medicationSummary": [
+      { "substance": "Cafeína", "users": 919, "percentOfBase": 74, "avgDose": "112 mg", "maxDose": "400 mg" },
+      { "substance": "Ibuprofeno", "users": 598, "percentOfBase": 48, "avgDose": "267 mg", "maxDose": "1200 mg" },
+      { "substance": "Creatina", "users": 436, "percentOfBase": 35, "avgDose": "3050 mg", "maxDose": "10000 mg" },
+      { "substance": "Álcool", "users": 361, "percentOfBase": 29, "avgDose": "18 g", "maxDose": "80 g" },
+      { "substance": "Nicotina", "users": 274, "percentOfBase": 22, "avgDose": "7 mg", "maxDose": "50 mg" }
+    ],
+    "patientBase": {
+      "total": 1248,
+      "percentOfBase": 100,
+      "trend": [40, 44, 42, 50, 48, 58, 55, 66, 62, 74, 70, 82]
+    }
+  },
+  "patient": {
+    "name": "Gabriel Borghi De Faria",
+    "patientId": "1905",
+    "recordId": "2025-0153",
+    "initials": "GB",
+    "consultationDate": "22/07/2025 20:00",
+    "age": 34,
+    "weightKg": 82,
+    "metabolism": "Alto",
+    "sensitivity": "Média",
+    "baseHealthIndex": "78/100",
+    "vitals": [
+      {
+        "id": "heart-rate",
+        "label": "Frequência Cardíaca",
+        "value": "92",
+        "unit": "bpm",
+        "icon": "heart",
+        "comparison": "Maior que",
+        "percentile": 91,
+        "sparkline": [70, 76, 82, 78, 85, 88, 92]
+      },
+      {
+        "id": "anxiety",
+        "label": "Nível de Ansiedade",
+        "value": "8,4",
+        "unit": "/ 10",
+        "icon": "brain",
+        "comparison": "Maior que",
+        "percentile": 84,
+        "sparkline": [5.2, 6.0, 6.4, 7.1, 7.6, 8.0, 8.4]
+      },
+      {
+        "id": "sleepiness",
+        "label": "Nível de Sonolência",
+        "value": "2,3",
+        "unit": "/ 10",
+        "icon": "moon",
+        "comparison": "Menor que",
+        "percentile": 74,
+        "sparkline": [4.8, 4.2, 3.9, 3.4, 3.0, 2.6, 2.3]
+      },
+      {
+        "id": "health-index",
+        "label": "Índice de Saúde",
+        "value": "89",
+        "unit": "/ 100",
+        "icon": "shield",
+        "comparison": "Melhor que",
+        "percentile": 78,
+        "sparkline": [68, 72, 75, 79, 82, 86, 89]
+      },
+      {
+        "id": "top-medication",
+        "label": "Medicamento Mais Utilizado",
+        "value": "Cafeína",
+        "icon": "pill",
+        "comparison": "",
+        "percentile": 74,
+        "barData": [30, 45, 55, 40, 65, 74]
+      }
+    ],
+    "comparisonTable": [
+      { "indicator": "Peso", "icon": "weight", "patient": "82 kg", "population": "75 kg", "diff": "+7 kg", "direction": "up", "percentile": 74 },
+      { "indicator": "Frequência Cardíaca", "icon": "heart", "patient": "92 bpm", "population": "79 bpm", "diff": "+13 bpm", "direction": "up", "percentile": 91 },
+      { "indicator": "Nível de Ansiedade", "icon": "brain", "patient": "8,4", "population": "5,2", "diff": "+3,2", "direction": "up", "percentile": 84 },
+      { "indicator": "Nível de Sonolência", "icon": "moon", "patient": "2,3", "population": "4,8", "diff": "-2,5", "direction": "down", "percentile": 26 },
+      { "indicator": "Índice de Saúde", "icon": "shield", "patient": "89", "population": "76", "diff": "+13", "direction": "up", "percentile": 78 }
+    ],
+    "medications": [
+      { "name": "Cafeína", "dose": "120 mg", "status": "Acima da média", "icon": "coffee" },
+      { "name": "Álcool", "dose": "0 mg", "status": "Não utiliza", "icon": "wine" },
+      { "name": "Nicotina", "dose": "5 mg", "status": "Dentro da média", "icon": "syringe" },
+      { "name": "Melatonina", "dose": "3 mg", "status": "Dentro da média", "icon": "moon" },
+      { "name": "Ibuprofeno", "dose": "600 mg", "status": "Acima da média", "icon": "pill" }
+    ],
+    "percentiles": [
+      { "label": "Peso", "value": 74 },
+      { "label": "Frequência Cardíaca", "value": 91 },
+      { "label": "Nível de Ansiedade", "value": 84 },
+      { "label": "Nível de Sonolência", "value": 26 },
+      { "label": "Índice de Saúde", "value": 78 }
+    ],
+    "radar": [
+      { "metric": "Índice de Saúde", "patient": 89, "population": 76 },
+      { "metric": "Frequência Cardíaca", "patient": 92, "population": 79 },
+      { "metric": "Nível de Ansiedade", "patient": 84, "population": 52 },
+      { "metric": "Nível de Sonolência", "patient": 23, "population": 48 },
+      { "metric": "Peso", "patient": 82, "population": 75 }
+    ],
+    "insights": [
+      "A frequência cardíaca deste paciente está acima de 91% da população, indicando um nível elevado.",
+      "O nível de ansiedade está entre os 15% mais altos da base.",
+      "O nível de sonolência está abaixo da média, menor que 74% dos pacientes.",
+      "O índice de saúde é superior ao de 78% da população.",
+      "A dose de cafeína está acima da média em comparação aos demais usuários."
+    ]
+  }
+}
