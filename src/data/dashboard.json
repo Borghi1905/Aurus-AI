@@ -1,253 +1,392 @@
 {
   "app": {
-    "name": "AURUS AI",
-    "tagline": "HEALTH INTELLIGENCE",
-    "lastUpdated": "22/07/2025 20:30"
+    "name": "AURUS AI", (nao)
+    "tagline": "HEALTH INTELLIGENCE", (nao)
+    "lastUpdated": "22/07/2025 20:30" (editavel)
   },
+
   "admin": {
-    "name": "Administrador",
-    "role": "Aurus AI",
-    "initials": "AD"
+    "name": "Administrador", (nao)
+    "role": "Aurus AI", (nao)
+    "initials": "AD" (nao)
   },
+
   "overview": {
     "stats": [
       {
-        "id": "total-patients",
-        "label": "Total de Pacientes",
-        "value": "1248",
-        "icon": "users",
-        "delta": "100% da base",
-        "deltaDirection": "neutral"
+        "id": "total-patients", (nao)
+        "label": "Total de Pacientes", (nao)
+        "value": "1248", (editavel)
+        "icon": "users", (nao)
+        "delta": "100% da base", (editavel)
+        "deltaDirection": "neutral" (editavel)
       },
       {
-        "id": "avg-heart-rate",
-        "label": "Frequência Cardíaca Média",
-        "value": "79",
-        "unit": "bpm",
-        "icon": "heart",
-        "delta": "-2,4 vs último período",
-        "deltaDirection": "down",
-        "sparkline": [58, 62, 60, 68, 66, 74, 79]
+        "id": "avg-heart-rate", (nao)
+        "label": "Frequência Cardíaca Média", (nao)
+        "value": "79", (editavel)
+        "unit": "bpm", (nao)
+        "icon": "heart", (nao)
+        "delta": "-2,4 vs último período", (nao)
+        "deltaDirection": "down", (nao)
+        "sparkline": [58, 62, 60, 68, 66, 74, 79] (nao)
       },
       {
-        "id": "avg-health-index",
-        "label": "Índice de Saúde Médio",
-        "value": "75,6",
-        "icon": "shield",
-        "delta": "+4,8 vs último período",
-        "deltaDirection": "up",
-        "sparkline": [60, 64, 63, 69, 71, 73, 75.6]
+        "id": "avg-health-index", (nao)
+        "label": "Índice de Saúde Médio", (nao)
+        "value": "75,6", (editavel)
+        "icon": "shield", (nao)
+        "delta": "+4,8 vs último período", (nao)
+        "deltaDirection": "up", (nao)
+        "sparkline": [60, 64, 63, 69, 71, 73, 75.6] (nao)
       },
       {
-        "id": "avg-anxiety",
-        "label": "Nível de Ansiedade Médio",
-        "value": "5,2",
-        "icon": "brain",
-        "delta": "-0,6 vs último período",
-        "deltaDirection": "down",
-        "sparkline": [6.2, 6.0, 5.8, 6.1, 5.6, 5.4, 5.2]
+        "id": "avg-anxiety", (nao)
+        "label": "Nível de Ansiedade Médio", (nao)
+        "value": "5,2", (editavel)
+        "icon": "brain", (nao)
+        "delta": "-0,6 vs último período", (nao)
+        "deltaDirection": "down", (nao)
+        "sparkline": [6.2, 6.0, 5.8, 6.1, 5.6, 5.4, 5.2] (nao)
       },
       {
-        "id": "avg-sleepiness",
-        "label": "Nível de Sonolência Média",
-        "value": "4,8",
-        "icon": "moon",
-        "delta": "+0,3 vs último período",
-        "deltaDirection": "up",
-        "sparkline": [4.2, 4.3, 4.5, 4.4, 4.6, 4.7, 4.8]
+        "id": "avg-sleepiness", (nao)
+        "label": "Nível de Sonolência Média", (nao)
+        "value": "4,8", (editavel)
+        "icon": "moon", (nao)
+        "delta": "+0,3 vs último período", (nao)
+        "deltaDirection": "up", (nao)
+        "sparkline": [4.2, 4.3, 4.5, 4.4, 4.6, 4.7, 4.8] (nao)
       },
       {
-        "id": "top-medication",
-        "label": "Medicamento Mais Utilizado",
-        "value": "Cafeína",
-        "icon": "pill",
-        "delta": "74% dos pacientes",
-        "deltaDirection": "neutral",
-        "sparkline": [30, 40, 45, 55, 60, 68, 74]
+        "id": "top-medication", (nao)
+        "label": "Medicamento Mais Utilizado", (nao)
+        "value": "Cafeína", (editavel)
+        "icon": "pill", (nao)
+        "delta": "74% dos pacientes", (editavel)
+        "deltaDirection": "neutral", (editavel)
+        "sparkline": [30, 40, 45, 55, 60, 68, 74] (nao)
       }
     ],
+
     "medicationUsage": [
-      { "label": "Cafeína", "value": 74 },
-      { "label": "Ibuprofeno", "value": 48 },
-      { "label": "Creatina", "value": 35 },
-      { "label": "Álcool", "value": 29 },
-      { "label": "Nicotina", "value": 22 },
-      { "label": "Omeprazol", "value": 18 },
-      { "label": "Dipirona", "value": 17 },
-      { "label": "Loratadina", "value": 15 },
-      { "label": "Melatonina", "value": 12 },
-      { "label": "Metformina", "value": 9 }
+      { "label": "Cafeína", (nao) "value": 74 (editavel) },
+      { "label": "Ibuprofeno", (nao) "value": 48 (editavel) },
+      { "label": "Creatina", (nao) "value": 35 (editavel) },
+      { "label": "Álcool", (nao) "value": 29 (editavel) },
+      { "label": "Nicotina", (nao) "value": 22 (editavel) },
+      { "label": "Omeprazol", (nao) "value": 18 (editavel) },
+      { "label": "Dipirona", (nao) "value": 17 (editavel) },
+      { "label": "Loratadina", (nao) "value": 15 (editavel) },
+      { "label": "Melatonina", (nao) "value": 12 (editavel) },
+      { "label": "Metformina", (nao) "value": 9 (editavel) }
     ],
+
     "ageDistribution": [
-      { "label": "18-25", "value": 162 },
-      { "label": "26-35", "value": 312 },
-      { "label": "36-45", "value": 318 },
-      { "label": "46-60", "value": 308 },
-      { "label": "60+", "value": 148 }
+      { "label": "18-25", (nao) "value": 162 (editavel) },
+      { "label": "26-35", (nao) "value": 312 (editavel) },
+      { "label": "36-45", (nao) "value": 318 (editavel) },
+      { "label": "46-60", (nao) "value": 308 (editavel) },
+      { "label": "60+", (nao) "value": 148 (editavel) }
     ],
-    "heartRateHistogram": [
-      { "label": "40-50", "value": 18 },
-      { "label": "50-60", "value": 92 },
-      { "label": "60-70", "value": 248 },
-      { "label": "70-80", "value": 372 },
-      { "label": "80-90", "value": 262 },
-      { "label": "90-100", "value": 178 },
-      { "label": "100-110", "value": 118 },
-      { "label": "110-120", "value": 46 },
-      { "label": "120-130", "value": 22 },
-      { "label": "130+", "value": 6 }
+  "heartRateHistogram": [
+      { "label": "40-50", (nao) "value": 18 (editavel) },
+      { "label": "50-60", (nao) "value": 92 (editavel) },
+      { "label": "60-70", (nao) "value": 248 (editavel) },
+      { "label": "70-80", (nao) "value": 372 (editavel) },
+      { "label": "80-90", (nao) "value": 262 (editavel) },
+      { "label": "90-100", (nao) "value": 178 (editavel) },
+      { "label": "100-110", (nao) "value": 118 (editavel) },
+      { "label": "110-120", (nao) "value": 46 (editavel) },
+      { "label": "120-130", (nao) "value": 22 (editavel) },
+      { "label": "130+", (nao) "value": 6 (editavel) }
     ],
+
     "healthIndexHistogram": [
-      { "label": "0-20", "value": 8 },
-      { "label": "20-40", "value": 64 },
-      { "label": "40-60", "value": 214 },
-      { "label": "60-80", "value": 356 },
-      { "label": "80-100", "value": 268 },
-      { "label": "100-120", "value": 172 },
-      { "label": "120-140", "value": 86 },
-      { "label": "140-160", "value": 42 },
-      { "label": "160-180", "value": 16 },
-      { "label": "180+", "value": 4 }
+      { "label": "0-20", (nao) "value": 8 (editavel) },
+      { "label": "20-40", (nao) "value": 64 (editavel) },
+      { "label": "40-60", (nao) "value": 214 (editavel) },
+      { "label": "60-80", (nao) "value": 356 (editavel) },
+      { "label": "80-100", (nao) "value": 268 (editavel) },
+      { "label": "100-120", (nao) "value": 172 (editavel) },
+      { "label": "120-140", (nao) "value": 86 (editavel) },
+      { "label": "140-160", (nao) "value": 42 (editavel) },
+      { "label": "160-180", (nao) "value": 16 (editavel) },
+      { "label": "180+", (nao) "value": 4 (editavel) }
     ],
+
     "correlation": {
-      "xAxisLabel": "Nível de Sonolência",
-      "yAxisLabel": "Nível de Ansiedade",
-      "xAxisOptions": ["Sonolência", "Frequência Cardíaca", "Idade"],
-      "yAxisOptions": ["Ansiedade", "Índice de Saúde", "Frequência Cardíaca"],
-      "coefficient": 0.62,
-      "coefficientLabel": "Correlação positiva moderada",
+      "xAxisLabel": "Nível de Sonolência", (nao)
+      "yAxisLabel": "Nível de Ansiedade", (nao)
+
+      "xAxisOptions": [
+        "Sonolência",
+        "Frequência Cardíaca",
+        "Idade"
+      ], (nao)
+
+      "yAxisOptions": [
+        "Ansiedade",
+        "Índice de Saúde",
+        "Frequência Cardíaca"
+      ], (nao)
+
+      "coefficient": 0.62, (editavel)
+      "coefficientLabel": "Correlação positiva moderada", (editavel)
+
       "points": [
-        { "x": 0.5, "y": 1.8 }, { "x": 1.1, "y": 2.4 }, { "x": 1.4, "y": 1.6 },
-        { "x": 1.8, "y": 3.1 }, { "x": 2.0, "y": 2.6 }, { "x": 2.2, "y": 3.6 },
-        { "x": 2.5, "y": 2.9 }, { "x": 2.7, "y": 3.8 }, { "x": 2.9, "y": 4.2 },
-        { "x": 3.1, "y": 3.4 }, { "x": 3.3, "y": 4.6 }, { "x": 3.4, "y": 3.9 },
-        { "x": 3.6, "y": 5.0 }, { "x": 3.8, "y": 4.3 }, { "x": 4.0, "y": 5.4 },
-        { "x": 4.1, "y": 4.7 }, { "x": 4.3, "y": 5.8 }, { "x": 4.5, "y": 5.0 },
-        { "x": 4.6, "y": 6.1 }, { "x": 4.8, "y": 5.5 }, { "x": 5.0, "y": 6.4 },
-        { "x": 5.1, "y": 5.8 }, { "x": 5.3, "y": 6.7 }, { "x": 5.4, "y": 6.0 },
-        { "x": 5.6, "y": 7.0 }, { "x": 5.8, "y": 6.3 }, { "x": 6.0, "y": 7.3 },
-        { "x": 6.1, "y": 6.6 }, { "x": 6.3, "y": 7.6 }, { "x": 6.4, "y": 6.9 },
-        { "x": 6.6, "y": 7.9 }, { "x": 6.8, "y": 7.1 }, { "x": 7.0, "y": 8.1 },
-        { "x": 7.1, "y": 7.4 }, { "x": 7.3, "y": 8.4 }, { "x": 7.5, "y": 7.7 },
-        { "x": 7.6, "y": 8.6 }, { "x": 7.8, "y": 8.0 }, { "x": 8.0, "y": 8.9 },
-        { "x": 8.2, "y": 8.2 }, { "x": 8.4, "y": 9.1 }, { "x": 8.6, "y": 8.5 },
-        { "x": 8.8, "y": 9.3 }, { "x": 9.0, "y": 8.7 }, { "x": 9.2, "y": 9.5 },
-        { "x": 9.4, "y": 9.0 }, { "x": 9.6, "y": 9.6 }, { "x": 9.8, "y": 9.2 },
-        { "x": 6.5, "y": 5.9 }, { "x": 5.5, "y": 5.2 }, { "x": 4.4, "y": 4.0 },
-        { "x": 3.5, "y": 3.2 }, { "x": 2.6, "y": 2.1 }, { "x": 7.2, "y": 6.8 },
-        { "x": 6.2, "y": 6.5 }, { "x": 5.9, "y": 5.4 }, { "x": 4.9, "y": 4.5 },
-        { "x": 8.1, "y": 7.5 }, { "x": 7.9, "y": 7.2 }, { "x": 3.0, "y": 2.5 }
+        { "x": 0.5, (editavel) "y": 1.8 (editavel) },
+        { "x": 1.1, (editavel) "y": 2.4 (editavel) },
+        { "x": 1.4, (editavel) "y": 1.6 (editavel) },
+        { "x": 1.8, (editavel) "y": 3.1 (editavel) },
+        { "x": 2.0, (editavel) "y": 2.6 (editavel) },
+        { "x": 9.8, (editavel) "y": 9.2 (editavel) },
+        { "x": 6.5, (editavel) "y": 5.9 (editavel) },
+        { "x": 5.5, (editavel) "y": 5.2 (editavel) },
+        { "x": 4.4, (editavel) "y": 4.0 (editavel) },
+        { "x": 3.5, (editavel) "y": 3.2 (editavel) },
+        { "x": 2.6, (editavel) "y": 2.1 (editavel) },
+        { "x": 7.2, (editavel) "y": 6.8 (editavel) },
+        { "x": 6.2, (editavel) "y": 6.5 (editavel) },
+        { "x": 5.9, (editavel) "y": 5.4 (editavel) },
+        { "x": 4.9, (editavel) "y": 4.5 (editavel) },
+        { "x": 8.1, (editavel) "y": 7.5 (editavel) },
+        { "x": 7.9, (editavel) "y": 7.2 (editavel) },
+        { "x": 3.0, (editavel) "y": 2.5 (editavel) }
       ]
     },
+
     "medicationSummary": [
-      { "substance": "Cafeína", "users": 919, "percentOfBase": 74, "avgDose": "112 mg", "maxDose": "400 mg" },
-      { "substance": "Ibuprofeno", "users": 598, "percentOfBase": 48, "avgDose": "267 mg", "maxDose": "1200 mg" },
-      { "substance": "Creatina", "users": 436, "percentOfBase": 35, "avgDose": "3050 mg", "maxDose": "10000 mg" },
-      { "substance": "Álcool", "users": 361, "percentOfBase": 29, "avgDose": "18 g", "maxDose": "80 g" },
-      { "substance": "Nicotina", "users": 274, "percentOfBase": 22, "avgDose": "7 mg", "maxDose": "50 mg" }
-    ],
-    "patientBase": {
-      "total": 1248,
-      "percentOfBase": 100,
-      "trend": [40, 44, 42, 50, 48, 58, 55, 66, 62, 74, 70, 82]
-    }
-  },
-  "patient": {
-    "name": "Gabriel Borghi De Faria",
-    "patientId": "1905",
-    "recordId": "2025-0153",
-    "initials": "GB",
-    "consultationDate": "22/07/2025 20:00",
-    "age": 34,
-    "weightKg": 82,
-    "metabolism": "Alto",
-    "sensitivity": "Média",
-    "baseHealthIndex": "78/100",
-    "vitals": [
       {
-        "id": "heart-rate",
-        "label": "Frequência Cardíaca",
-        "value": "92",
-        "unit": "bpm",
-        "icon": "heart",
-        "comparison": "Maior que",
-        "percentile": 91,
-        "sparkline": [70, 76, 82, 78, 85, 88, 92]
+        "substance": "Cafeína", (nao)
+        "users": 919, (editavel)
+        "percentOfBase": 74, (editavel)
+        "avgDose": "112 mg", (editavel)
+        "maxDose": "400 mg" (editavel)
       },
       {
-        "id": "anxiety",
-        "label": "Nível de Ansiedade",
-        "value": "8,4",
-        "unit": "/ 10",
-        "icon": "brain",
-        "comparison": "Maior que",
-        "percentile": 84,
-        "sparkline": [5.2, 6.0, 6.4, 7.1, 7.6, 8.0, 8.4]
+        "substance": "Ibuprofeno", (nao)
+        "users": 598, (editavel)
+        "percentOfBase": 48, (editavel)
+        "avgDose": "267 mg", (editavel)
+        "maxDose": "1200 mg" (editavel)
       },
       {
-        "id": "sleepiness",
-        "label": "Nível de Sonolência",
-        "value": "2,3",
-        "unit": "/ 10",
-        "icon": "moon",
-        "comparison": "Menor que",
-        "percentile": 74,
-        "sparkline": [4.8, 4.2, 3.9, 3.4, 3.0, 2.6, 2.3]
+        "substance": "Creatina", (nao)
+        "users": 436, (editavel)
+        "percentOfBase": 35, (editavel)
+        "avgDose": "3050 mg", (editavel)
+        "maxDose": "10000 mg" (editavel)
       },
       {
-        "id": "health-index",
-        "label": "Índice de Saúde",
-        "value": "89",
-        "unit": "/ 100",
-        "icon": "shield",
-        "comparison": "Melhor que",
-        "percentile": 78,
-        "sparkline": [68, 72, 75, 79, 82, 86, 89]
+        "substance": "Álcool", (nao)
+        "users": 361, (editavel)
+        "percentOfBase": 29, (editavel)
+        "avgDose": "18 g", (editavel)
+        "maxDose": "80 g" (editavel)
       },
       {
-        "id": "top-medication",
-        "label": "Medicamento Mais Utilizado",
-        "value": "Cafeína",
-        "icon": "pill",
-        "comparison": "",
-        "percentile": 74,
-        "barData": [30, 45, 55, 40, 65, 74]
+        "substance": "Nicotina", (nao)
+        "users": 274, (editavel)
+        "percentOfBase": 22, (editavel)
+        "avgDose": "7 mg", (editavel)
+        "maxDose": "50 mg" (editavel)
       }
     ],
-    "comparisonTable": [
-      { "indicator": "Peso", "icon": "weight", "patient": "82 kg", "population": "75 kg", "diff": "+7 kg", "direction": "up", "percentile": 74 },
-      { "indicator": "Frequência Cardíaca", "icon": "heart", "patient": "92 bpm", "population": "79 bpm", "diff": "+13 bpm", "direction": "up", "percentile": 91 },
-      { "indicator": "Nível de Ansiedade", "icon": "brain", "patient": "8,4", "population": "5,2", "diff": "+3,2", "direction": "up", "percentile": 84 },
-      { "indicator": "Nível de Sonolência", "icon": "moon", "patient": "2,3", "population": "4,8", "diff": "-2,5", "direction": "down", "percentile": 26 },
-      { "indicator": "Índice de Saúde", "icon": "shield", "patient": "89", "population": "76", "diff": "+13", "direction": "up", "percentile": 78 }
-    ],
-    "medications": [
-      { "name": "Cafeína", "dose": "120 mg", "status": "Acima da média", "icon": "coffee" },
-      { "name": "Álcool", "dose": "0 mg", "status": "Não utiliza", "icon": "wine" },
-      { "name": "Nicotina", "dose": "5 mg", "status": "Dentro da média", "icon": "syringe" },
-      { "name": "Melatonina", "dose": "3 mg", "status": "Dentro da média", "icon": "moon" },
-      { "name": "Ibuprofeno", "dose": "600 mg", "status": "Acima da média", "icon": "pill" }
-    ],
-    "percentiles": [
-      { "label": "Peso", "value": 74 },
-      { "label": "Frequência Cardíaca", "value": 91 },
-      { "label": "Nível de Ansiedade", "value": 84 },
-      { "label": "Nível de Sonolência", "value": 26 },
-      { "label": "Índice de Saúde", "value": 78 }
-    ],
-    "radar": [
-      { "metric": "Índice de Saúde", "patient": 89, "population": 76 },
-      { "metric": "Frequência Cardíaca", "patient": 92, "population": 79 },
-      { "metric": "Nível de Ansiedade", "patient": 84, "population": 52 },
-      { "metric": "Nível de Sonolência", "patient": 23, "population": 48 },
-      { "metric": "Peso", "patient": 82, "population": 75 }
-    ],
-    "insights": [
-      "A frequência cardíaca deste paciente está acima de 91% da população, indicando um nível elevado.",
-      "O nível de ansiedade está entre os 15% mais altos da base.",
-      "O nível de sonolência está abaixo da média, menor que 74% dos pacientes.",
-      "O índice de saúde é superior ao de 78% da população.",
-      "A dose de cafeína está acima da média em comparação aos demais usuários."
-    ]
-  }
+
+    "patientBase": {
+      "total": 1248, (editavel)
+      "percentOfBase": 100, (editavel)
+      "trend": [40, 44, 42, 50, 48, 58, 55, 66, 62, 74, 70, 82] (nao)
+    }
+  },
+ "patient": {
+  "name": "Gabriel Borghi De Faria", (editavel)
+  "patientId": "1905", (editavel)
+  "recordId": "2025-0153", (editavel)
+  "initials": "GB", (editavel)
+  "consultationDate": "22/07/2025 20:00", (editavel)
+
+  "age": 34, (editavel)
+  "weightKg": 82, (editavel)
+  "metabolism": "Alto", (editavel)
+  "sensitivity": "Média", (editavel)
+  "baseHealthIndex": "78/100", (editavel)
+
+  "vitals": [
+    {
+      "id": "heart-rate", (nao)
+      "label": "Frequência Cardíaca", (nao)
+      "value": "92", (editavel)
+      "unit": "bpm", (nao)
+      "icon": "heart", (nao)
+      "comparison": "Maior que", (editavel)
+      "percentile": 91, (editavel)
+      "sparkline": [70, 76, 82, 78, 85, 88, 92] (editavel)
+    },
+    {
+      "id": "anxiety", (nao)
+      "label": "Nível de Ansiedade", (nao)
+      "value": "8,4", (editavel)
+      "unit": "/ 10", (nao)
+      "icon": "brain", (nao)
+      "comparison": "Maior que", (editavel)
+      "percentile": 84, (editavel)
+      "sparkline": [5.2, 6.0, 6.4, 7.1, 7.6, 8.0, 8.4] (editavel)
+    },
+    {
+      "id": "sleepiness", (nao)
+      "label": "Nível de Sonolência", (nao)
+      "value": "2,3", (editavel)
+      "unit": "/ 10", (nao)
+      "icon": "moon", (nao)
+      "comparison": "Menor que", (editavel)
+      "percentile": 74, (editavel)
+      "sparkline": [4.8, 4.2, 3.9, 3.4, 3.0, 2.6, 2.3] (editavel)
+    },
+    {
+      "id": "health-index", (nao)
+      "label": "Índice de Saúde", (nao)
+      "value": "89", (editavel)
+      "unit": "/ 100", (nao)
+      "icon": "shield", (nao)
+      "comparison": "Melhor que", (editavel)
+      "percentile": 78, (editavel)
+      "sparkline": [68, 72, 75, 79, 82, 86, 89] (editavel)
+    },
+    {
+      "id": "top-medication", (nao)
+      "label": "Medicamento Mais Utilizado", (nao)
+      "value": "Cafeína", (editavel)
+      "icon": "pill", (nao)
+      "comparison": "", (editavel)
+      "percentile": 74, (editavel)
+      "barData": [30, 45, 55, 40, 65, 74] (editavel)
+    }
+  ],
+
+  "comparisonTable": [
+    {
+      "indicator": "Peso", (nao)
+      "icon": "weight", (nao)
+      "patient": "82 kg", (editavel)
+      "population": "75 kg", (editavel)
+      "diff": "+7 kg", (editavel)
+      "direction": "up", (editavel)
+      "percentile": 74 (editavel)
+    },
+    {
+      "indicator": "Frequência Cardíaca", (nao)
+      "icon": "heart", (nao)
+      "patient": "92 bpm", (editavel)
+      "population": "79 bpm", (editavel)
+      "diff": "+13 bpm", (editavel)
+      "direction": "up", (editavel)
+      "percentile": 91 (editavel)
+    },
+    {
+      "indicator": "Nível de Ansiedade", (nao)
+      "icon": "brain", (nao)
+      "patient": "8,4", (editavel)
+      "population": "5,2", (editavel)
+      "diff": "+3,2", (editavel)
+      "direction": "up", (editavel)
+      "percentile": 84 (editavel)
+    },
+    {
+      "indicator": "Nível de Sonolência", (nao)
+      "icon": "moon", (nao)
+      "patient": "2,3", (editavel)
+      "population": "4,8", (editavel)
+      "diff": "-2,5", (editavel)
+      "direction": "down", (editavel)
+      "percentile": 26 (editavel)
+    },
+    {
+      "indicator": "Índice de Saúde", (nao)
+      "icon": "shield", (nao)
+      "patient": "89", (editavel)
+      "population": "76", (editavel)
+      "diff": "+13", (editavel)
+      "direction": "up", (editavel)
+      "percentile": 78 (editavel)
+    }
+  ],
+
+  "medications": [
+    {
+      "name": "Cafeína", (nao)
+      "dose": "120 mg", (editavel)
+      "status": "Acima da média", (editavel)
+      "icon": "coffee" (nao)
+    },
+    {
+      "name": "Álcool", (nao)
+      "dose": "0 mg", (editavel)
+      "status": "Não utiliza", (editavel)
+      "icon": "wine" (nao)
+    },
+    {
+      "name": "Nicotina", (nao)
+      "dose": "5 mg", (editavel)
+      "status": "Dentro da média", (editavel)
+      "icon": "syringe" (nao)
+    },
+    {
+      "name": "Melatonina", (nao)
+      "dose": "3 mg", (editavel)
+      "status": "Dentro da média", (editavel)
+      "icon": "moon" (nao)
+    },
+    {
+      "name": "Ibuprofeno", (nao)
+      "dose": "600 mg", (editavel)
+      "status": "Acima da média", (editavel)
+      "icon": "pill" (nao)
+    }
+  ],
+
+  "percentiles": [
+    { "label": "Peso", (nao) "value": 74 (editavel) },
+    { "label": "Frequência Cardíaca", (nao) "value": 91 (editavel) },
+    { "label": "Nível de Ansiedade", (nao) "value": 84 (editavel) },
+    { "label": "Nível de Sonolência", (nao) "value": 26 (editavel) },
+    { "label": "Índice de Saúde", (nao) "value": 78 (editavel) }
+  ],
+
+  "radar": [
+    {
+      "metric": "Índice de Saúde", (nao)
+      "patient": 89, (editavel)
+      "population": 76 (editavel)
+    },
+    {
+      "metric": "Frequência Cardíaca", (nao)
+      "patient": 92, (editavel)
+      "population": 79 (editavel)
+    },
+    {
+      "metric": "Nível de Ansiedade", (nao)
+      "patient": 84, (editavel)
+      "population": 52 (editavel)
+    },
+    {
+      "metric": "Nível de Sonolência", (nao)
+      "patient": 23, (editavel)
+      "population": 48 (editavel)
+    },
+    {
+      "metric": "Peso", (nao)
+      "patient": 82, (editavel)
+      "population": 75 (editavel)
+    }
+  ],
+
+  "insights": [
+    "A frequência cardíaca deste paciente está acima de 91% da população, indicando um nível elevado.", (editavel)
+    "O nível de ansiedade está entre os 15% mais altos da base.", (editavel)
+    "O nível de sonolência está abaixo da média, menor que 74% dos pacientes.", (editavel)
+    "O índice de saúde é superior ao de 78% da população.", (editavel)
+    "A dose de cafeína está acima da média em comparação aos demais usuários." (editavel)
+  ]
 }
