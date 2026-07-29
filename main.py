@@ -62,11 +62,9 @@ porcentagem_mais_utilizada = (quantidade_mais_utilizada / quantidade_pessoas) * 
 texto_mais_utilizada = f"{porcentagem_mais_utilizada:.2f} % dos pacientes"
 
 #contando a quantidade de pessoas por faixa etária
-idade_18_25 = ((df_pacientes["idade"] >= 18) & (df_pacientes["idade"] < 25)).sum()
+idade_18_25 = ((df_pacientes["idade"] >= 18) & (df_pacientes["idade"] <= 25)).sum()
 idade_26_35 = ((df_pacientes["idade"] >= 26) & (df_pacientes["idade"] <= 35)).sum()
 idade_36_45 = ((df_pacientes["idade"] >= 36) & (df_pacientes["idade"] <= 45)).sum()
 idade_46_60 = ((df_pacientes["idade"] >= 46) & (df_pacientes["idade"] <= 60)).sum()
-idade_60mais = ((df_pacientes["idade"] >= 60)).sum()
-
-
+idade_60mais = ((df_pacientes["idade"] > 60)).sum()
 
