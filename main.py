@@ -9,6 +9,9 @@ from datetime import date
 #leitura do dataset
 df_pacientes = pd.read_csv("data/pacientes.csv")
 
+
+#parte de todas as pessoas sem individualizar, apenas para pegar as informações gerais do dataset
+
 #pegando o dia de hoje
 hoje = date.today()
 
@@ -67,4 +70,60 @@ idade_26_35 = ((df_pacientes["idade"] >= 26) & (df_pacientes["idade"] <= 35)).su
 idade_36_45 = ((df_pacientes["idade"] >= 36) & (df_pacientes["idade"] <= 45)).sum()
 idade_46_60 = ((df_pacientes["idade"] >= 46) & (df_pacientes["idade"] <= 60)).sum()
 idade_60mais = ((df_pacientes["idade"] > 60)).sum()
+
+#contando a quantidade de pessoas por faixa de frequência cardíaca
+coracao_40_50 = ((df_pacientes["frequencia_cardiaca_bpm"] >= 40) & (df_pacientes["frequencia_cardiaca_bpm"] <= 50)).sum()
+coracao_51_60 = ((df_pacientes["frequencia_cardiaca_bpm"] >= 51) & (df_pacientes["frequencia_cardiaca_bpm"] <= 60)).sum()
+coracao_61_70 = ((df_pacientes["frequencia_cardiaca_bpm"] >= 61) & (df_pacientes["frequencia_cardiaca_bpm"] <= 70)).sum()
+coracao_71_80 = ((df_pacientes["frequencia_cardiaca_bpm"] >= 71) & (df_pacientes["frequencia_cardiaca_bpm"] <= 80)).sum()
+coracao_81_90 = ((df_pacientes["frequencia_cardiaca_bpm"] >= 81) & (df_pacientes["frequencia_cardiaca_bpm"] <= 90)).sum()
+coracao_91_100 = ((df_pacientes["frequencia_cardiaca_bpm"] >= 91) & (df_pacientes["frequencia_cardiaca_bpm"] <= 100)).sum()
+coracao_101_110 = ((df_pacientes["frequencia_cardiaca_bpm"] >= 101) & (df_pacientes["frequencia_cardiaca_bpm"] <= 110)).sum()
+coracao_111_120 = ((df_pacientes["frequencia_cardiaca_bpm"] >= 111) & (df_pacientes["frequencia_cardiaca_bpm"] <= 120)).sum()
+coracao_121_130 = ((df_pacientes["frequencia_cardiaca_bpm"] >= 121) & (df_pacientes["frequencia_cardiaca_bpm"] <= 130)).sum()
+coracao_mais_de_130 = ((df_pacientes["frequencia_cardiaca_bpm"] >= 131)).sum()
+
+#contando a quantidade de pessoas por faixa de índice de saúde
+indice = df_pacientes["indice_saude_base"] * 100
+saude_0_20 = ((indice >= 0) & (indice <= 20)).sum()
+saude_21_40 = ((indice >= 21) & (indice <= 40)).sum()
+saude_41_60 = ((indice >= 41) & (indice <= 60)).sum()
+saude_61_80 = ((indice >= 61) & (indice <= 80)).sum()
+saude_81_100 = ((indice >= 81) & (indice <= 100)).sum()
+
+#vendo quantas pessoas tomam cada tipo de dose em %
+porcentagem_cafeina = (df_pacientes["dose_cafeina"] > 0).sum()/quantidade_pessoas * 100
+porcentagem_alcool = (df_pacientes["dose_alcool"] > 0).sum()/quantidade_pessoas * 100
+porcentagem_nicotina = (df_pacientes["dose_nicotina"] > 0).sum()/quantidade_pessoas * 100
+porcentagem_melatonina = (df_pacientes["dose_melatonina"] > 0).sum()/quantidade_pessoas * 100
+porcentagem_ibuprofeno = (df_pacientes["dose_ibuprofeno"] > 0).sum()/quantidade_pessoas * 100
+porcentagem_dipirona = (df_pacientes["dose_dipirona"] > 0).sum()/quantidade_pessoas * 100
+porcentagem_loratadina = (df_pacientes["dose_loratadina"] > 0).sum()/quantidade_pessoas * 100
+porcentagem_omeprazol = (df_pacientes["dose_omeprazol"] > 0).sum()/quantidade_pessoas * 100
+porcentagem_metformina = (df_pacientes["dose_metformina"] > 0).sum()/quantidade_pessoas * 100
+porcentagem_creatina = (df_pacientes["dose_creatina"] > 0).sum()/quantidade_pessoas * 100
+
+# vendo o maximo de cada tipo de dose
+max_cafeina = df_pacientes["dose_cafeina"].max()
+max_alcool = df_pacientes["dose_alcool"].max()
+max_nicotina = df_pacientes["dose_nicotina"].max()
+max_melatonina = df_pacientes["dose_melatonina"].max()
+max_ibuprofeno = df_pacientes["dose_ibuprofeno"].max()
+max_dipirona = df_pacientes["dose_dipirona"].max()
+max_loratadina = df_pacientes["dose_loratadina"].max()
+max_omeprazol = df_pacientes["dose_omeprazol"].max()
+max_metformina = df_pacientes["dose_metformina"].max()
+max_creatina = df_pacientes["dose_creatina"].max()
+
+# vendo a media de cada tipo de dose
+media_cafeina = df_pacientes["dose_cafeina"].mean()
+media_alcool = df_pacientes["dose_alcool"].mean()
+media_nicotina = df_pacientes["dose_nicotina"].mean()
+media_melatonina = df_pacientes["dose_melatonina"].mean()
+media_ibuprofeno = df_pacientes["dose_ibuprofeno"].mean()
+media_dipirona = df_pacientes["dose_dipirona"].mean()
+media_loratadina = df_pacientes["dose_loratadina"].mean()
+media_omeprazol = df_pacientes["dose_omeprazol"].mean()
+media_metformina = df_pacientes["dose_metformina"].mean()
+media_creatina = df_pacientes["dose_creatina"].mean()
 
