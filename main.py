@@ -313,3 +313,12 @@ elif dose_creatina < media_creatina:
 else:
     status_creatina = "Na média"
 
+# calculando os percentis do paciente em relação ao dataset
+percentil_frequencia_cardiaca = (df_pacientes["frequencia_cardiaca_bpm"] < frequencia_cardiaca_bpm).mean() * 100
+percentil_indice_saude = (df_pacientes["indice_saude_base"] < indice_saude_base).mean() * 100
+percentil_nivel_ansiedade = (df_pacientes["nivel_ansiedade"] < nivel_ansiedade).mean() * 100
+
+#pora sonolencia que é melhor ter menos, então o percentil é calculado de forma diferente
+percentil_nivel_sonolencia = (df_pacientes["nivel_sonolencia"] > nivel_sonolencia).mean() * 100
+percentil_peso = (df_pacientes["peso_kg"] < peso).mean() * 100
+
